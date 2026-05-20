@@ -36,8 +36,8 @@ public class SafetyInspectionDetailServiceImpl extends BaseServiceImpl<SafetyIns
 
     @Autowired
     private AdminFileService adminFileService;
-    @Autowired
-    private IBSafetyDangerSourceService safetyDangerSourceService;
+/*    @Autowired
+    private IBSafetyDangerSourceService safetyDangerSourceService;*/
     @Autowired
     private ISafetyInspectionPlanService inspectionPlanService;
 
@@ -104,7 +104,7 @@ public class SafetyInspectionDetailServiceImpl extends BaseServiceImpl<SafetyIns
         if(safetyInspectionDetailBO.getDangerSourceId() != null){
             ArrayList<Integer> ids = new ArrayList<>();
             ids.add(safetyInspectionDetailBO.getDangerSourceId());
-            safetyDangerSourceService.getChildId(ids, safetyInspectionDetailBO.getDangerSourceId());
+            //safetyDangerSourceService.getChildId(ids, safetyInspectionDetailBO.getDangerSourceId());
             safetyInspectionDetailBO.setDangerSourceIds(ids);
         }
 

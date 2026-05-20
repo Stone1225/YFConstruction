@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * @author wnj
  * @since 2021-04-09
  */
-@Service
+/*@Service
 public class QualEnterprisecheckSonGrpServiceImpl extends BaseServiceImpl<QualEnterprisecheckSonGrpMapper, QualEnterprisecheckSonGrp> implements BaseService<QualEnterprisecheckSonGrp> {
 
-}
+}*/

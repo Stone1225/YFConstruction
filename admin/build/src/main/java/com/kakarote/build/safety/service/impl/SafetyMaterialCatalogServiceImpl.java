@@ -28,8 +28,8 @@ import java.util.stream.Collectors;
 @Service
 public class SafetyMaterialCatalogServiceImpl extends BaseServiceImpl<SafetyMaterialCatalogMapper, SafetyMaterialCatalog> implements ISafetyMaterialCatalogService {
 
-    @Autowired
-    private ISafetyMaterialService iSafetyMaterialService;
+    //@Autowired
+    //private ISafetyMaterialService iSafetyMaterialService;
 
     @Override
     public List<Map> selectTree(Integer id) {
@@ -53,7 +53,7 @@ public class SafetyMaterialCatalogServiceImpl extends BaseServiceImpl<SafetyMate
         this.getBaseMapper().deleteById(id);
         QueryWrapper<SafetyMaterial> queryWrapper2 = new QueryWrapper<>();
         queryWrapper2.eq("catalog_id",id);
-        iSafetyMaterialService.remove(queryWrapper2);
+        //iSafetyMaterialService.remove(queryWrapper2);
     }
 
     /**

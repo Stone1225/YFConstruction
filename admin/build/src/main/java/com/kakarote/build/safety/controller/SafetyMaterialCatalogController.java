@@ -28,8 +28,8 @@ public class SafetyMaterialCatalogController {
     @Autowired
     private ISafetyMaterialCatalogService iSafetyMaterialCatalogService;
 
-    @Autowired
-    private ISafetyMaterialService iSafetyMaterialService;
+    //@Autowired
+    //private ISafetyMaterialService iSafetyMaterialService;
 
     @PostMapping("/add")
     @ApiOperation("新增数据")
@@ -54,7 +54,7 @@ public class SafetyMaterialCatalogController {
         iSafetyMaterialCatalogService.removeById(id);
         QueryWrapper<SafetyMaterial> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("catalog_id",id);
-        iSafetyMaterialService.remove(queryWrapper);
+        //iSafetyMaterialService.remove(queryWrapper);
         return Result.ok();
     }
 

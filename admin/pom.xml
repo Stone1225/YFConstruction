@@ -16,7 +16,7 @@
         <module>admin</module>
         <module>oa</module>
         <module>work</module>
-        <module>crm</module>
+<!--        <module>crm</module>-->
         <module>authorization</module>
         <module>core</module>
         <module>message</module>
